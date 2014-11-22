@@ -113,7 +113,7 @@ function locationizer(work_obj){
 }
 console.log(locationizer(work));
 
-function inName(name){
+/*function inName(name){
 	name = name.trim().split(" ");
 	console.log(name);
 	name[1] = name[1].toUpperCase();
@@ -121,6 +121,7 @@ function inName(name){
 	return name[0] + " " + name[1];
 }
 $('#main').append(internationalizeButton);
+*/
 
 projects.display = function(){
 	for (project in projects.projects){
@@ -154,8 +155,8 @@ education.display = function(){
 	for (course in education.onlineCourses){
 		var formattedTitle =HTMLonlineTitle.replace("%data%",education.onlineCourses[course].title);
 		$(".education-entry:last").append(formattedTitle);
-		var formattedSchool =HTMLonlineSchool.replace("%data%",education.onlineCourses[course].school);
-		$(".education-entry:last").append(formattedSchool);
+		//var formattedSchool =HTMLonlineSchool.replace("%data%",education.onlineCourses[course].school);
+		//$(".education-entry:last").append(formattedSchool);
 	}
 }
 education.display();

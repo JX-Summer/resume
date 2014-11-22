@@ -42,21 +42,20 @@ var HTMLonlineSchool = " -- %data%</a>";
 var HTMLonlineDates = "<div class='date-text'>%data%</div>";
 var HTMLonlineURL = "<br><a href='#'>%data%</a>";
 
-var internationalizeButton = "<button>Internationalize</button>";
+//var internationalizeButton = "<button>Internationalize</button>";
 var googleMap = "<div id='map'></div>";
 var chart="<div id='chart'></div>";
 
 
 /*
 The International Name helper function
-*/
+
 $(document).ready(function() {
   $('button').click(function() {
     var iName = inName("Junyi Xiao") || function(){};
     $('#name').html(iName);  
   });
 })
-
 
 
 /*
@@ -71,7 +70,7 @@ function logClicks(x,y) {
       "y": y
     }
   );
-  console.log("x location: " + x + "; y location: " + y);
+  //console.log("x location: " + x + "; y location: " + y);
 }
 
 $(document).click(function(loc) {

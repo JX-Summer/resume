@@ -10,7 +10,9 @@
   padding-left: 5%;
   padding-right: 5%;
 }
-
+h1,h2,h3,h4{
+  font-style: bold;
+}
 
 h1 {
 
@@ -21,7 +23,6 @@ h1 {
 }
 
 h2 {
-  font-style: bold;
   font-size: 24px;
   color: #45413f;
   line-height: 29px;
@@ -29,14 +30,13 @@ h2 {
 }
 
 h3 {
-  font-style: bold;
+
   font-size: 20px;
   color: #45413f;
   line-height: 22px;
 }
 
 h4 {
-  font-style: bold;
   font-size: 14px;
   color: #4A4A4A;
   line-height: 17px;
@@ -49,21 +49,18 @@ h2, h4, h5 {
 }
 
 
-.date-text {
+.date-text,.location-text {
   font-style: italic;
   font-size: 16px;
   color: #999999;
   line-height: 16px;
+}
+.date-text{
   float: left;
 }
 
 .location-text {
-  font-style: italic;
-  font-size: 16px;
-  color: #999999;
-  line-height: 16px;
   float: right;
-
 }
 
 p {
@@ -91,6 +88,7 @@ a {
   color: #45413f
   display: none;
   margin-top: 10px;
+
 }
 
 #skills {
@@ -99,10 +97,6 @@ a {
 
 .white {
   background-color: #ffffff;
-}
-
-.gray-text {
-  color: #1c1c1c;
 }
 
 .gray-text {
@@ -133,7 +127,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 10px;
+  padding: 0px;
 }
 
 .center-content {
@@ -165,7 +159,7 @@ span {
 }
 
 #letsConnect {
-  text-align: center;
+  text-align: left;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -175,19 +169,20 @@ span {
 }
 
 @media only screen and (max-width:900px) {
-  .biopic {
-    width: 175px;
+  #skillsChart {
+    display: none;
   }
+
 }
 
 @media only screen and (max-width: 750px) {
   #letsConnect {
     margin-top: 10%;
   }
-  .biopic {
-    width: 150px;
-  }
   .welcome-message {
+    display: none;
+  }
+  #skillsChart {
     display: none;
   }
 }
@@ -226,8 +221,48 @@ button{
 
 @media only screen and (min-width: 750px) {
   #skillsH3,
-  #skills,
-  .biopic {
-    display: block;
-  }
+  #skills
 }
+#contact { 
+    background: #999999; 
+    padding: 1em 2em; 
+    position: relative;
+  }
+
+.js #contact {
+  position:absolute;
+  top:0;
+  left:350px;
+  width: 600px;
+  display: none;
+} 
+
+
+#contact h2 { 
+  margin-top: 0;
+  padding:0px;
+  padding-left: 0%;
+  padding-right: 0%; 
+}
+
+#contact ul { padding: 0; }
+
+#contact li { 
+  list-style: none;
+  margin-bottom: 1em;
+}
+
+/* Close button on form */
+.close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-weight: bold;
+  font-family: sans-serif;
+  cursor: pointer;
+} 
+
+/* Form inputs */
+input, textarea { width: 100%; line-height: 2em;}
+input[type=submit] { width: auto;  }
+label { display: block; text-align: left; }
