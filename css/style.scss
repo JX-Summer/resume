@@ -1,0 +1,271 @@
+//colors
+$black: #1c1c1c;
+$dark_gray: #45413f;
+$gray: #4a4a4a;
+$light_gray: #999999;
+$mine: #333333;
+$concord #7f787a;
+$white: #ffffff;
+
+//fonts
+$font_0: Roboto;
+$font_1: sans-serif;
+
+//@extend-elements
+//original selectors
+//h2, h4, h5
+%extend_1 {
+	padding: 10px;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+//original selectors
+//.date-text, .location-text
+%extend_2 {
+	font-size: 16px;
+	color: $light_gray;
+	line-height: 25px;
+}
+
+
+* {
+	width: 800px;
+	padding: 0;
+	margin: auto;
+	font-family: $font_0, $font_1;
+}
+.education-entry {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.work-entry {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.project-entry {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+h1 {
+	font-weight: bold;
+	font-size: 40px;
+	color: $black;
+	line-height: 48px;
+	display: inline;
+}
+h2 {
+	font-weight: bold;
+	font-size: 24px;
+	color: $dark_gray;
+	line-height: 29px;
+	padding: 10px;
+	@extend %extend_1;
+}
+h3 {
+	font-weight: bold;
+	font-size: 20px;
+	color: $dark_gray;
+	line-height: 22px;
+}
+h4 {
+	font-weight: bold;
+	font-size: 14px;
+	color: #4A4A4A;
+	line-height: 17px;
+	@extend %extend_1;
+}
+h5 {
+	@extend %extend_1;
+}
+.date-text {
+	@extend %extend_2;
+	float: left;
+}
+.location-text {
+	@extend %extend_2;
+	float: right;
+}
+p {
+	font-size: 14px;
+	color: $mine;
+	line-height: 20px;
+}
+a {
+	color: $color_concord_approx;
+	text-decoration: none;
+	margin-top: 5px;
+	display: block;
+	font-size: 18px;
+}
+#skillsH3 {
+	color: $dark_gray display: none;
+	margin-top: 10px;
+}
+#skills {
+	display: block;
+}
+.white {
+	background-color: $white;
+}
+.gray-text {
+	font-weight: bold;
+	color: $dark_gray;
+	line-height: 2em;
+	font-size: 20px;
+}
+.gray {
+	background-color: $white;
+	padding-bottom: 10px;
+	clear: both;
+}
+#header {
+	background-color: $white;
+}
+.flex-box {
+	//vendor-prefix found
+	//display: -webkit-flex
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 0;
+}
+.center-content {
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 3%;
+	padding-bottom: 1%;
+}
+ul {
+	list-style-type: none;
+}
+.biopic {
+	float: left;
+	padding: 10px;
+	width: 200px;
+	display: none;
+}
+img {
+	padding: 10px;
+}
+span {
+	padding: 5px;
+}
+#letsConnect {
+	text-align: left;
+}
+@media only screen and (max-width: 1024px) {
+	#letsConnect {
+		margin-top: 5%;
+	}
+}
+@media only screen and (max-width:900px) {
+	#skillsChart {
+		display: none;
+	}
+}
+@media only screen and (max-width: 750px) {
+	#letsConnect {
+		margin-top: 10%;
+	}
+	.welcome-message {
+		display: none;
+	}
+	#skillsChart {
+		display: none;
+	}
+}
+#map {
+	display: block;
+	height: 100%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+#mapDiv {
+	height: 400px;
+	width: 100%;
+	padding-bottom: 5%;
+}
+svg {
+	padding: 10px;
+	display: block;
+	margin-left: 1.2cm;
+	font-size: 10px;
+	font-weight: bold;
+	color: $white;
+}
+em {
+	color: $color_concord_approx;
+	line-height: 25px;
+	font-style: normal;
+}
+.m {
+	font-size: 24px;
+}
+button {
+	font-size: 15px;
+	font-weight: bold;
+	display: block;
+	background-color: $white;
+	//Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+	border-radius: 5px;
+	cursor: pointer;
+	width: 100px;
+	margin-right: 0;
+	margin-top: -20px;
+}
+@media only screen and (min-width: 750px) {
+	0 {
+		#: #;
+		: ;
+	}
+}
+#contact {
+	background: $light_gray;
+	padding: 1em 2em;
+	position: relative;
+	h2 {
+		margin-top: 0;
+		padding: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	ul {
+		padding: 0;
+	}
+	li {
+		list-style: none;
+		margin-bottom: 1em;
+	}
+}
+.close {
+	position: relative;
+	left: 790px;
+	top: 10px;
+	font-weight: bold;
+	font-family: $font_1;
+	cursor: pointer;
+}
+input {
+	width: 100%;
+	line-height: 2em;
+}
+textarea {
+	width: 100%;
+	line-height: 2em;
+}
+input[type=submit] {
+	width: auto;
+}
+label {
+	display: block;
+	text-align: left;
+}
+.js #contact {
+	position: fixed;
+	top: 0;
+	margin: ;
+	width: 800px;
+	display: none;
+}
