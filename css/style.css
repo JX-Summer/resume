@@ -1,17 +1,16 @@
 *{
+    width: 800px;
     padding:0;
-    margin:0;
+    margin:auto;
     font-family: 'Roboto', sans-serif;
 }
-
-
 
 .education-entry, .work-entry, .project-entry {
   padding-left: 5%;
   padding-right: 5%;
 }
 h1,h2,h3,h4{
-  font-style: bold;
+  font-weight: bold;
 }
 
 h1 {
@@ -25,7 +24,7 @@ h1 {
 h2 {
   font-size: 24px;
   color: #45413f;
-  line-height: 29px;
+  line-height: 30px;
   padding: 10px;
 }
 
@@ -39,7 +38,7 @@ h3 {
 h4 {
   font-size: 14px;
   color: #4A4A4A;
-  line-height: 17px;
+  line-height: 18px;
 }
 
 h2, h4, h5 {
@@ -50,10 +49,9 @@ h2, h4, h5 {
 
 
 .date-text,.location-text {
-  font-style: italic;
   font-size: 16px;
   color: #999999;
-  line-height: 16px;
+  line-height: 25px;
 }
 .date-text{
   float: left;
@@ -66,23 +64,24 @@ h2, h4, h5 {
 p {
   font-size: 14px;
   color: #333333;
-  line-height: 21px;
+  line-height: 20px;
 }
 
 a {
   color: #7f787a;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 5px;
   display: block;
   font-size: 18px;
 }
 
-.welcome-message {
+/*.welcome-message {
   font-style: italic;
   font-size: 18px;
   color: #F3F3F3;
   line-height: 28px;
 }
+*/
 
 #skillsH3 {
   color: #45413f
@@ -110,10 +109,6 @@ a {
   background-color: #ffffff;
   padding-bottom: 10px;
   clear:both;
-}
-
-.dark-gray {
-  background-color: #FfFfFf;
 }
 
 /* TODO: Replace with image later */
@@ -205,18 +200,27 @@ svg {
   display: block;
   margin-left: 1.2cm;
   font-size: 10px;
-  font-style: bold;
+  font-weight: bold;
   color: #ffffff;
 }
 em{
-  color: #7d7d7d;
+  color: #7f787a;
+  line-height: 25px;
+  font-style: normal;
 }
 .m{
   font-size: 24px;
 }
 button{
   font-size: 15px;
-  font-style: bold;
+  font-weight: bold;
+  display: block;
+  background-color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px;
+  margin-right: 0;
+  margin-top: -20px;
 }
 
 @media only screen and (min-width: 750px) {
@@ -230,10 +234,10 @@ button{
   }
 
 .js #contact {
-  position:absolute;
+  position:fixed;
   top:0;
-  left:350px;
-  width: 600px;
+  margin: ;
+  width: 800px;
   display: none;
 } 
 
@@ -254,8 +258,8 @@ button{
 
 /* Close button on form */
 .close {
-  position: absolute;
-  right: 10px;
+  position: relative;
+  left: 790px;
   top: 10px;
   font-weight: bold;
   font-family: sans-serif;
